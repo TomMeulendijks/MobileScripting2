@@ -1,0 +1,26 @@
+var mycanvas = document.getElementById('mycanvas');
+	var context = mycanvas.getContext('2d');
+
+	var vierkantje = {
+			posX: 0,
+			posY: 0,
+			width: 30,
+			height: 30
+		};
+
+	function draw(){
+
+		context.clearRect(0,0,400,400);
+
+		vierkantje.posX += 5;
+
+		if(vierkantje.posX > 400 - vierkantje.width){
+			vierkantje.posX = vierkantje.width * -1; 
+		}
+
+		context.fillStyle = "#fff";
+
+		context.fillRect(vierkantje.posX, vierkantje.posY,vierkantje.width, vierkantje.height);
+	}
+
+	setInterval(draw, 30);

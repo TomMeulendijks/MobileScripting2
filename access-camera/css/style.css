@@ -1,0 +1,36 @@
+/* line 1, ../sass/style.scss */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* line 9, ../sass/style.scss */
+#uploader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-10000px);
+}
+
+/* line 11, ../sass/style.scss */
+#imageUploadButton {
+  background: #0e83cb;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  border-radius: 4px;
+  padding: 15px;
+  height: 50px;
+  width: 250px;
+}
+
+/* line 12, ../sass/style.scss */
+canvas {
+  display: none;
+}
